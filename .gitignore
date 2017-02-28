@@ -55,6 +55,3 @@ fastlane/screenshots
 
 # vscode stuff
 .vscode/.react
-
-# Typescript generated files
-build

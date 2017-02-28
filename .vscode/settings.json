@@ -3,5 +3,6 @@
     "editor.formatOnPaste": true,
     "editor.formatOnType": true,
 
-    "jshint.enable": false
+    "jshint.enable": false,
+    "eslint.enable": true
 }

@@ -1,0 +1,32 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'HelloKitty' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for HelloKitty
+  pod 'RNMobileCenter', '~> 0.4.0'
+  pod 'MobileCenter', '~> 0.6.0'
+
+  
+
+  target 'HelloKittyTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'HelloKitty-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for HelloKitty-tvOS
+
+  target 'HelloKitty-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

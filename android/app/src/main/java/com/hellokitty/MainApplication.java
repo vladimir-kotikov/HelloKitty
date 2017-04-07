@@ -38,7 +38,7 @@ public class MainApplication extends Application implements ReactApplication {
             new RNCrashesPackage(MainApplication.this, getResources().getString(R.string.mobileCenterCrashes_whenToSendCrashes)),
             new RNAnalyticsPackage(MainApplication.this, getResources().getString(R.string.mobileCenterAnalytics_whenToEnableAnalytics)),
             new RNSoundPackage(),
-            new CodePush("b7fdcfe2-42bc-43d3-b24b-f7b6b69e1059", getApplicationContext(), BuildConfig.DEBUG)
+            new CodePush("IGs5KRf4z8ldhwgYdK7KneH23-2uEJGG3YJXf", getApplicationContext(), BuildConfig.DEBUG)
       );
     }
   };

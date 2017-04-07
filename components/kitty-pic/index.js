@@ -3,14 +3,14 @@ import React, { Component } from 'react';
 import { Image, View } from 'react-native';
 import Sound from 'react-native-sound';
 
+const picture = require('./kitty.jpg');
+const meow1 = new Sound('meow1.mp3');
+const meow2 = new Sound('meow2.mp3');
+
 export class KittyPic extends Component {
 
     counter = 0;
-    picture = require('./kitty.jpg');
-    sounds = [
-        new Sound(require('./meow1.mp3')),
-        new Sound(require('./meow2.mp3'))
-    ];
+    sounds = [ meow1, meow2 ];
 
     meow() {
         this.sounds[this.counter++].play();
@@ -19,7 +19,7 @@ export class KittyPic extends Component {
     render() {
         return (
             <View onTouchEnd={() => this.meow()}>
-                <Image source={this.picture}/>
+                <Image source={picture}/>
             </View>
         );
     }

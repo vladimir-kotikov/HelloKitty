@@ -7,10 +7,10 @@ import codePush from "react-native-code-push";
 
 import { Main } from './components/main';
 
-let Main = codePush({
+let main = codePush({
     checkFrequency: codePush.CheckFrequency.ON_APP_RESUME,
     installMode: codePush.InstallMode.IMMEDIATE,
     updateDialog: true
 })(Main);
 
-AppRegistry.registerComponent('HelloKitty', () => Main);
+AppRegistry.registerComponent('HelloKitty', () => main);

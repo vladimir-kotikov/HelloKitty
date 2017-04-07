@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
+import codePush from 'react-native-code-push';
 import { KittyPic } from '../kitty-pic';
 
 export class Main extends Component {

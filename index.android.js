@@ -5,6 +5,12 @@ import Analytics from "mobile-center-analytics";
 import Crashes from "mobile-center-crashes";
 import codePush from "react-native-code-push";
 
-import { Main } from './components/main'
+import { Main } from './components/main';
 
-AppRegistry.registerComponent('HelloKitty', () => codePush(Main));
+let Main = codePush({
+    checkFrequency: codePush.CheckFrequency.ON_APP_RESUME,
+    installMode: codePush.InstallMode.IMMEDIATE,
+    updateDialog: true
+})(Main);
+
+AppRegistry.registerComponent('HelloKitty', () => Main);
